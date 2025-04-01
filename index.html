@@ -125,7 +125,7 @@
     <div id="contador"></div>
     
     <div class="mensagem">
-        <p>Kimberlly, meu amor! Desde o dia que começamos essa jornada, meu mundo se iluminou de um jeito especial. Cada momento ao seu lado é precioso, e eu só quero te lembrar o quanto te amo! 💖</p>
+        <p>Kimberlly, minha linda, desde o dia que começamos essa jornada, meu mundo se iluminou de um jeito especial. Cada momento ao seu lado é precioso, e eu só quero te lembrar o quanto te amo! 💖</p>
         <p>Estarei sempre aqui por você, nos dias bons e ruins, te apoiando, te amando e fazendo o possível para te ver sorrir. Você é o melhor presente que a vida me deu! 🌹</p>
         <p>Você é uma mulher incrível, inteligente e determinada. Sei que vai alcançar seu sonho de se tornar advogada e estarei ao seu lado torcendo sempre por você! 📚⚖️</p>
     </div>
@@ -157,7 +157,7 @@
             const hoje = new Date();
             const diferenca = hoje - dataInicio;
             const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-            document.getElementById("contador").innerText = ${dias} dias de muito amor! ❤️;
+            document.getElementById("contador").innerText = `${dias} dias de muito amor! ❤️`;
         }
         calcularTempoJuntos();
         
@@ -166,8 +166,8 @@
             heart.innerText = "💜";
             heart.className = "heart";
             document.body.appendChild(heart);
-            heart.style.left = ${event.clientX}px;
-            heart.style.top = ${event.clientY}px;
+            heart.style.left = `${event.clientX}px`;
+            heart.style.top = `${event.clientY}px`;
             setTimeout(() => { heart.remove(); }, 1000);
         }
 
@@ -183,8 +183,8 @@
             const heart = document.createElement("div");
             heart.innerText = "💜";
             heart.className = "falling-heart";
-            heart.style.left = ${Math.random() * 100}vw;
-            heart.style.top = -5vh;
+            heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.top = `-5vh`;
             document.body.appendChild(heart);
             setTimeout(() => { heart.remove(); }, 5000);
         }
