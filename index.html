@@ -79,7 +79,7 @@
         .falling-heart {
             position: absolute;
             font-size: 18px;
-            color: red;
+            color: #ff66cc;
             animation: fall 5s linear infinite;
         }
         @keyframes fall {
@@ -132,7 +132,7 @@
         
         function showHeart(event) {
             const heart = document.createElement("div");
-            heart.innerText = "❤️";
+            heart.innerText = "💜";
             heart.className = "heart";
             document.body.appendChild(heart);
             heart.style.left = `${event.clientX}px`;
@@ -150,9 +150,10 @@
 
         function createFallingHeart() {
             const heart = document.createElement("div");
-            heart.innerText = "❤️";
+            heart.innerText = "💜";
             heart.className = "falling-heart";
             heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.top = `-5vh`;
             document.body.appendChild(heart);
             setTimeout(() => { heart.remove(); }, 5000);
         }
